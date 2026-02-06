@@ -53,7 +53,9 @@ view(0,90)
 camproj('orthographic')
 lighting gouraud
 
+
 %% Visualize at specified configuration q
+q = [0.5 -0.5]
 figure("Name","Robot at specified joint configuration q");
 show(robot, q, "Frames","on",Visuals="on");
 title("Robot at specified joint configuration q");

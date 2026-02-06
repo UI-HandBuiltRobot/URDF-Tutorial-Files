@@ -62,27 +62,3 @@ addBody(robot, body2, "link1");  % Parent to previous link
 % Then move ee_link to attach to the new link2 instead
 %}
 
-%% 5) Visualize the robot
-figure("Name","MATLAB robot show");
-show(robot);
-title("2-link, 1-revolute-joint robot");
-view(0,90)
-camproj('orthographic')
-
-%% 6) Test forward kinematics with sample configuration
-q = [0.5, -0.5];   % [rad] joint angle for joint1
-
-T = getTransform(robot, q, "ee_link", "base");
-
-disp("End effector transform (base -> ee_link):");
-disp(T);
-disp("End effector position [x y z] (m):");
-disp(tform2trvec(T));
-
-%% 7) Visualize at specified configuration
-figure("Name","Robot at specified joint configuration q");
-show(robot, q, "Frames","on");
-title("Robot at specified joint configuration q");
-axis equal;
-view(0,90)
-camproj('orthographic')
