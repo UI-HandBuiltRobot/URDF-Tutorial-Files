@@ -47,7 +47,7 @@ source urdf_env/bin/activate
 
 ```bash
 python -m pip install --upgrade pip
-python -m pip install pyglet<2 yourdfpy trimesh numpy catkin_pkg
+python -m pip install "pyglet<2" yourdfpy trimesh numpy catkin_pkg
 ```
 
 > **Important**
