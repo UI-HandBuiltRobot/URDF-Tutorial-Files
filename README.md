@@ -11,7 +11,7 @@ By the end of Step 5, students will be able to:
 
 ---
 
-## Assumed Software Environment and Template Code
+## Step 1: Set Up Software Environment and Get Template Code
 
 Sample code can be accessed on the course GitHub repository:
 [https://github.com/UI-HandBuiltRobot/URDF-Tutorial-Files](https://github.com/UI-HandBuiltRobot/URDF-Tutorial-Files)
@@ -24,26 +24,26 @@ Files are available for both **MATLAB** and **Python**.
 
 For this lab, you will create a local Python virtual environment (no administrator privileges required) and install the required Python packages.
 
-### 1. Create a project directory
+### A. Create a project directory
 
 ```bash
 mkdir ~/urdf_lab
 cd ~/urdf_lab
 ```
 
-### 2. Create a virtual environment
+### B. Create a virtual environment
 
 ```bash
 python3 -m venv urdf_env
 ```
 
-### 3. Activate the virtual environment
+### C. Activate the virtual environment
 
 ```bash
 source urdf_env/bin/activate
 ```
 
-### 4. Install required Python packages
+### D. Install required Python packages
 
 ```bash
 python -m pip install --upgrade pip
@@ -171,7 +171,7 @@ colcon build
 
 ---
 
-## Install the Joint State GUI Package
+## Step 6: Install the ME:5195 Joint State GUI Package
 
 ROS 2 normally includes a joint-state GUI, but this distribution does not.
 
@@ -191,7 +191,7 @@ colcon build
 
 ---
 
-## Run the ROS Nodes
+## Step 7: Run the ROS Nodes
 
 You will use **three terminals**.
 In each terminal, source your workspace:
@@ -285,7 +285,7 @@ ros2 param list /robot_state_publisher
 
 ---
 
-## Inspecting Joint and Link Positions Using TF
+## Step 8: Inspecting Joint and Link Positions Using TF
 
 In ROS 2, joint and link positions are represented in the **TF transform tree**, which is continuously published by `robot_state_publisher`.
 
