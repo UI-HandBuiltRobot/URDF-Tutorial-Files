@@ -68,7 +68,7 @@ To use the Python scripts, unzip the repo and move the Python code into your `~/
 ```bash
 cd ~/Downloads                      #Navigate to the downloads directory
 unzip URDF-Tutorial-Files-main.zip  #Unzip the archive
-mv URDF-Tutorial-Files-main/Python\ Scripts/ ~urdf_lab  #Move files to project folder
+mv URDF-Tutorial-Files-main/Python\ Scripts/ ~/urdf_lab  #Move files to project folder
 cd ~/urdf_lab #Navigate back to project folder
 code . #Launch VS Code in project folder
 ```
